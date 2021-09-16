@@ -27,8 +27,6 @@
 
 ## How the project works
 
-List the ready features here:
-
 - Generating a random number between 1 and 20 which is not shown by default
 - Allows user to input a number
 - User can press the Check button to check if the user guess matches the random number

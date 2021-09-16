@@ -25,8 +25,6 @@ const onCheckBtn = () => {
   playerGuess = Number(guessInput.value);
   let playerScore = Number(score.textContent);
 
-  console.log(`guessNumber is ${guessNumber}`);
-  console.log(`playerGuess is ${playerGuess}`);
   // If no number
   if (!playerGuess) {
     message.textContent = '⛔ No Number!';
@@ -43,16 +41,26 @@ const onCheckBtn = () => {
       highscore.textContent = score.textContent;
     }
     // If guess too high
-  } else if (playerGuess > guessNumber) {
+  } else {
+    // Checks if guess is too high or too low and shows apropriate message
+    playerGuess > guessNumber
+      ? (message.textContent = '🧨 Too High! Guess Again!')
+      : (message.textContent = '🧨 Too Low! Guess Again!');
+
     score.textContent = playerScore - 1;
-    message.textContent = '🧨 Too High! Guess Again!';
-    generateGuessNumber();
-    // If guess too low
-  } else if (playerGuess < guessNumber) {
-    score.textContent = playerScore - 1;
-    message.textContent = '🧨 Too Low! Guess Again!';
     generateGuessNumber();
   }
+
+  //   else if (playerGuess > guessNumber) {
+  //     score.textContent = playerScore - 1;
+  //     message.textContent = '🧨 Too High! Guess Again!';
+  //     generateGuessNumber();
+  //     // If guess too low
+  //   } else if (playerGuess < guessNumber) {
+  //     score.textContent = playerScore - 1;
+  //     message.textContent = '🧨 Too Low! Guess Again!';
+  //     generateGuessNumber();
+  //   }
 };
 
 const onAgainBtn = () => {
