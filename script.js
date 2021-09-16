@@ -15,6 +15,7 @@ let playerGuess;
 // Generate the guess number
 const generateGuessNumber = () => {
   guessNumber = Math.floor(Math.random() * 19 + 1);
+  console.log(`Number is ${guessNumber}`);
 };
 
 generateGuessNumber();
