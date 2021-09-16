@@ -48,7 +48,6 @@ const onCheckBtn = () => {
       : (message.textContent = '🧨 Too Low! Guess Again!');
 
     score.textContent = playerScore - 1;
-    generateGuessNumber();
   }
 
   //   else if (playerGuess > guessNumber) {
