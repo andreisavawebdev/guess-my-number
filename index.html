@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess My Number</h1>
+      <h2>(Between 1 and 20)</h2>
+      <hr />
+      <h2>Start Guessing...</h2>
+      <input type="number" name="guess" min="1" max="20" />
+      <div>
+        <button>Check!</button>
+        <button>Try Again!</button>
+      </div>
+
+      <div>
+        <i class="fas fa-futbol"></i>
+        <p>Score: 20</p>
+        <br />
+        <i class="far fa-star"></i>
+        <p>Highscore: 0</p>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
