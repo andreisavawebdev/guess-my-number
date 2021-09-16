@@ -39,6 +39,8 @@ const onCheckBtn = () => {
     // Set highscore
     if (playerScore > Number(highscore.textContent)) {
       highscore.textContent = score.textContent;
+    } else if (Number(highscore.textContent) === 0) {
+      highscore.textContent = score.textContent;
     }
     // If guess too high
   } else if (playerGuess > guessNumber) {
